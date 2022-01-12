@@ -5,7 +5,7 @@ array = np.array([[1, 2, 3], [4, 5, 6]])
 print("Array 1:\n", array)
 
 # initialize an array of all zeroes or ones
-array = np.zeros((3, 4)) # where (3,4) is the shape of the array
+array = np.zeros((4, 4)) # where (3,4) is the shape of the array
 print("Array 2:\n", array)
 
 array = np.ones((3, 4, 5)) # where (3, 4, 5) is the shape of the array
@@ -56,7 +56,7 @@ array = np.arange(9).reshape((3,3))
 print("Array 1:\n", array)
 
 print(array + 3) # add a constant to every value, broadcasting
-array[0] *= 2 # add a constant to only one row
+array[0] *= 3 # add a constant to only one row
 print(array)
 print(np.power(array, 2)) # square every element
 
@@ -87,5 +87,5 @@ print("\nTranspose B:\n", B.transpose())
 print("\nShape of transpose(B):", B.transpose().shape)
 print("\nMatrix multiplication of A and transpose(B):\n", np.matmul(A,B.transpose()))
 
-C = np.matmul(A,B.transpose())
-print("\n Invert AB:", np.linalg.inv(C))
+C = np.matmul(B,A.transpose())
+print("\n Invert BA:", np.linalg.inv(C))
