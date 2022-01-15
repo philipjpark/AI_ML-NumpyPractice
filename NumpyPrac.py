@@ -50,6 +50,7 @@ print("Compute sum of each column in x:", np.sum(x, axis=0))  # Compute sum of e
 print("-----")
 print("Compute sum of each row in x: ", np.sum(x, axis=1))  # Compute sum of each row; prints "[3 7]"
 print("-----")
+print("Compute subtraction: ", np.subtract(x, x))
 
 # mathematical transformations
 array = np.arange(9).reshape((3,3))
