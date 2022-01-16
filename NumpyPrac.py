@@ -1,8 +1,13 @@
+from operator import invert
 import numpy as np
 
 # call np.array on a valid Python list
 array = np.array([[1, 2, 3], [4, 5, 6]])
 print("Array 1:\n", array)
+
+array1= np.array([[2,4,6], [8,10,12], [14,16,20]])
+
+print("Special Array:\n", array1)
 
 # initialize an array of all zeroes or ones
 array = np.zeros((4, 4)) # where (3,4) is the shape of the array
@@ -90,3 +95,4 @@ print("\nMatrix multiplication of A and transpose(B):\n", np.matmul(A,B.transpos
 
 C = np.matmul(B,A.transpose())
 print("\n Invert BA:", np.linalg.inv(C))
+
