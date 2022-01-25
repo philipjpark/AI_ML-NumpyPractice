@@ -2,7 +2,7 @@ from operator import invert
 import numpy as np
 
 # call np.array on a valid Python list
-array = np.array([[1, 2, 3], [4, 5, 6]])
+array = np.array([[1, 2, 3], [4, 5, 6], [6,7,8]])
 print("Array 1:\n", array)
 
 array1= np.array([[2,4,6], [8,10,12], [14,16,20]])
@@ -55,7 +55,7 @@ print("Compute sum of each column in x:", np.sum(x, axis=0))  # Compute sum of e
 print("-----")
 print("Compute sum of each row in x: ", np.sum(x, axis=1))  # Compute sum of each row; prints "[3 7]"
 print("-----")
-print("Compute subtraction: ", np.subtract(x, x))
+print("Compute subtraction: ", np.subtract(x, x + 1))
 
 # mathematical transformations
 array = np.arange(9).reshape((3,3))
