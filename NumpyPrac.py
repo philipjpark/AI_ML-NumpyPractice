@@ -96,3 +96,19 @@ print("\nMatrix multiplication of A and transpose(B):\n", np.matmul(A,B.transpos
 C = np.matmul(B,A.transpose())
 print("\n Invert BA:", np.linalg.inv(C))
 
+fav_num = 143
+
+example = 'c'  #double quotes and single quotes are equivalent in Python
+print(example)
+print(fav_num + fav_num *2)
+
+bool_ex = True
+
+print ( 1 < 2)
+
+example_list = [10, 'Phil', "Hi there", True]
+print(example_list[1:2])
+print(example_list[1:]) 
+print(example_list[1:5])
+print(example_list[:3])
+
